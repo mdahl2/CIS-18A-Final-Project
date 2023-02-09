@@ -1,0 +1,31 @@
+Matthew Dahl
+CIS-18A
+Professor Kasey Nguyen
+9 February 2023
+
+Summary of final project for CIS-18A
+
+I created my project based around a business program.
+I had to code a program that allowed a user to look at goods and allowed them to make a delivery of said goods.
+The user goes through a list of menus that give different options to choose from.
+To make a delivery, the user can input the day, time, and address.
+First, I created a main menu which gives the user the option to look at goods, take a survey or quit the program.
+If the user picks goods, then the program directs them to the furniture menu.
+They can pick couches, tables, or mattresses.
+I allow them the ability to return to the main menu if they change their mind.
+If they choose one of the pieces of furniture, the program allows the user to make a delivery appointment.
+I output the month of February, business hours and ask if they want to make the purchase.
+I created a program that never lets the user become confused.
+I made sure to output everything as simply as possible.
+I do not want to let the user become overwhelmed with too much on the screen.
+The user can change their mind so I gave the ability in some parts of the program to return to a menu.
+I made sure to ask and show everything that was needed for a business.
+For example, I give an order summary of everything the user inputs.
+This makes the user feel that they made an actual delivery. 
+My biggest problem was user input. I wanted to prevent the user inputting information that was unnecessary.
+For example, I made sure that the user only inputs numbers when setting the time and only inputs letters when setting AM or PM.
+However, I had trouble coding the same idea to switch statements.
+I understand not fully implementing this idea could break the program.
+When coding, I believe the user should feel like their decisions matter within the program.
+However, there should be boundaries for the user so the program will not terminate early.
+For future projects I will focus on making user input more efficient.
