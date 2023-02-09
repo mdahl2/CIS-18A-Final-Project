@@ -8,3 +8,5 @@ I let the user pick what day and time they want their delivery
 I let the user to purchase the furniture or go back to the menu if they changed their mind.
 The user can also choose to take a survey in the main menu
 I ask them questions relating to the buisness and let them change their responses if needed.
+
+NOTE: Master Branch contains Final Project
