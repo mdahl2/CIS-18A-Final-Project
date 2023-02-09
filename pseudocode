@@ -1,0 +1,554 @@
+Package Main_Menu
+Public class User_Menu
+Public void mainMenu
+	Print “Welcome to Dahl’s furniture store”
+	Print “business hours”
+	Print “Main Menu”
+Public void mainMenu_choice
+	Input choice
+Case: main menu choice
+1.	Print “Furniture menu”
+Method
+Pass In: nothing
+goods_ furniture__Menu
+goods_furniture_Menu_Choice
+
+2.	Print “Survey”
+Method
+Pass In: nothing
+Survey Title
+Survey Questions
+Survey Response
+
+3.	Quit main menu
+Print “Come back again!”
+End program.
+
+Package Furniture
+Public class Furniture
+Public void furniture menu
+	Print “Furniture Menu”
+Public void furniture_menu_choice
+Input  choice
+Case: Furniture_Menu_Choice
+1.	Print “Couches”
+Print “We have many options for your living room”
+Print “Which couch would you like to purchase?
+
+Method: Couch_Menu
+Method: Couch_Menu_Choice
+
+2.	Print “Tables”
+Print “You can’t have a room without a table!”
+Print “Which table would you like to purchase”
+Method: Table_Menu
+Method: Table_Menu_Choice
+
+
+3.	Print “Mattress”
+Print “Everyone needs to sleep!”
+Print “Which mattress would you like to purchase?”
+Method: Mattress_Menu
+Method: Mattress_Menu_Choice
+
+4.	Method: mainMenu
+Method:mainMenu_Choice
+
+
+Public class Couch
+Set int choice
+Set static String couch
+Set static int price
+public void Couch_Menu
+	input choice
+	Print “Couch Menu”
+1.	Set couch: “3 Seat Couch”
+Set price: 1250
+Print “This will be great for the family”
+Print(“Price: $price”)
+Print “What date would you like the couch delivered?”
+Method: delivery
+Method: time
+Method: payment
+
+2.	Set couch: “2 Seat Couch”
+Set price: 850
+Print “Nice and cozy for a couple”
+Print “Price: $price”
+Print “What date would you like the couch delivered?”
+Method: delivery
+Method: time
+Method: payment
+
+3.	Set couch: “1 Seat Couch”
+Set price: 650
+Print “All alone? That’s okay I got what you need!”
+Print “Price: $price”
+Print “What date would you like the couch delivered?”
+Method: delivery
+Method: time
+Method: payment
+
+4.	Method: furniture_menu
+Method: furniture_menu_choice
+
+5.	Method: mainMenu
+Method:mainMenu_choice
+
+Class Couch_Delivery extends Couch
+Set String date
+Set String time
+Set String address
+Set meridiem
+Public void delivery
+Set int begin: 4
+Set int dayNum: 28
+Set String header: “ S M T W T F S”
+Print “February”
+Print header
+Set int day: 1
+FOR days in the month of February
+	IF iteration mod 7 == 1
+		Print Line
+	IF iteration less than begin
+		Print Line 
+	Else
+	IF Day divided by 10 == 0
+	Print day
+	Else 
+	Print day
+Increment day
+
+END FOR
+
+Print “Enter day of February you would like your delivery:”
+WHILE Input must be a number
+	Print “Please enter valid date”
+Input
+END WHILE
+Set Date: input
+Print “Delivery date is February/date/2023”
+
+
+
+Public void time
+	Print “What time would you like the couch to be delivered?”
+	Set Array [] = 9,10,11,12,1,2,3,4,5,6,7,8,9
+	FOR Iterate 4 times
+		Print array elements 0 to 3 “AM”
+	END FOR
+	FOR iterate rest of array
+		Print array elements “PM”
+	END FOR
+	Print “Enter time here:”
+	WHILE Only can input integers
+		Print “Please enter valid time”
+		Input
+	END WHILE
+	Set time: input
+	Print “AM or PM?”
+	WHILE only input alphabetical letters
+	Print “Please enter AM or PM”
+	Input
+	END WHILE
+	Set Meridiem:  input
+	Print “Your couch will be delivered by + time + meridiem
+Public void payment
+	Set String payment
+	Set String purchase
+	Set String menu
+	Print “Enter address:
+	Set address: input
+DO
+	Print “Do you wish to proceed to payment?”
+	Print “Enter yes to proceed or No to return to couch menu:
+Set payment: input
+IF payment = “no”
+	Method Couch_Menu
+	Method Couch_menu_choice
+END IF
+ELSE IF
+	Print “Press P to purchase couch”
+	Set purchase: input
+IF purchase = “yes”
+	Print “Thank you for purchasing with Dahl’s Store”
+	Print “Order Summary”
+	Print “Item: +couch
+	Print “Delivery Date; 2/date/2023”
+	Print “Time to be delivered: + time + meridiem”
+	Print “Location to be delivered to: +address”
+	Print “Total Price: $price”
+	Print “Do you want to return to Main Menu? Enter yes or no”
+			WHILE input must be alphabetical letters
+			Print “Please enter yes or no”
+			Input
+			Set menu: input
+			IF menu = “yes”
+			Method: mainMenu
+			Method: mainMenu_Choice
+			END IF
+			ELSE IF Menu = “no”
+			Print “Thank you. Come back next time!”
+			END ELSE IF
+			ELSE
+			Print “Invalid input. Please try again.”
+			END ELSE
+			ELSE 
+			Print “Invalid input. Please try again.”
+			END ELSE
+			WHILE true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Public class Table
+Set int choice
+Set static String table
+Set static int price
+public void Table_Menu
+	input choice
+	Print “Table Menu”
+1.	Set couch: “ Dining Table”
+Set price: 1500
+Print “A great dinner on a beautiful table!”
+Print(“Price: $price”)
+Print “What date would you like the table delivered?”
+Method: delivery
+Method: time
+Method: payment
+
+2.	Set couch: “Coffee Table”
+Set price: 600
+Print “A table to kick back on!”
+Print “Price: $price”
+Print “What date would you like the table delivered?”
+Method: delivery
+Method: time
+Method: payment
+
+3.	Set couch: “Side Table”
+Set price: 200
+Print “A table to place your knick Knacks!
+Print “Price: $price”
+Print “What date would you like the table delivered?”
+Method: delivery
+Method: time
+Method: payment
+
+4.	Method: furniture_menu
+Method: furniture_menu_choice
+
+5.	Method: mainMenu
+Method:mainMenu_choice
+
+Class Table_Delivery extends Table
+Set String date
+Set String time
+Set String address
+Set meridiem
+Public void delivery
+Set int begin: 4
+Set int dayNum: 28
+Set String header: “ S M T W T F S”
+Print “February”
+Print header
+Set int day: 1
+FOR days in the month of February
+	IF iteration mod 7 == 1
+		Print Line
+	IF iteration less than begin
+		Print Line 
+	Else
+	IF Day divided by 10 == 0
+	Print day
+	Else 
+	Print day
+Increment day
+
+END FOR
+
+Print “Enter day of February you would like your delivery:”
+WHILE Input must be a number
+	Print “Please enter valid date”
+Input
+END WHILE
+Set Date: input
+Print “Delivery date is February/date/2023”
+
+
+
+Public void time
+	Print “What time would you like the table to be delivered?”
+	Set Array [] = 9,10,11,12,1,2,3,4,5,6,7,8,9
+	FOR Iterate 4 times
+		Print array elements 0 to 3 “AM”
+	END FOR
+	FOR iterate rest of array
+		Print array elements “PM”
+	END FOR
+	Print “Enter time here:”
+	WHILE Only can input integers
+		Print “Please enter valid time”
+		Input
+	END WHILE
+	Set time: input
+	Print “AM or PM?”
+	WHILE only input alphabetical letters
+	Print “Please enter AM or PM”
+	Input
+	END WHILE
+	Set Meridiem:  input
+	Print “Your table will be delivered by + time + meridiem
+Public void payment
+	Set String payment
+	Set String purchase
+	Set String menu
+	Print “Enter address:
+	Set address: input
+DO
+	Print “Do you wish to proceed to payment?”
+	Print “Enter yes to proceed or No to return to table menu:
+Set payment: input
+IF payment = “no”
+	Method Table_Menu
+	Method Table_menu_choice
+END IF
+ELSE IF
+	Print “Press P to purchase table”
+	Set purchase: input
+IF purchase = “yes”
+	Print “Thank you for purchasing with Dahl’s Store”
+	Print “Order Summary”
+	Print “Item: +table
+	Print “Delivery Date; 2/date/2023”
+	Print “Time to be delivered: + time + meridiem”
+	Print “Location to be delivered to: +address”
+	Print “Total Price: $price”
+	Print “Do you want to return to Main Menu? Enter yes or no”
+			WHILE input must be alphabetical letters
+			Print “Please enter yes or no”
+			Input
+			Set menu: input
+			IF menu = “yes”
+			Method: mainMenu
+			Method: mainMenu_Choice
+			END IF
+			ELSE IF Menu = “no”
+			Print “Thank you. Come back next time!”
+			END ELSE IF
+			ELSE
+			Print “Invalid input. Please try again.”
+			END ELSE
+			ELSE 
+			Print “Invalid input. Please try again.”
+			END ELSE
+			WHILE true
+
+
+	
+
+Public class Mattress
+Set int choice
+Set static String mattress
+Set static int price
+public void Mattress_Menu
+	input choice
+	Print “Mattress Menu”
+1.	Set mattress: “King Mattress”
+Set price: 2500
+Print “Fit for a king!”
+Print(“Price: $price”)
+Print “What date would you like the mattress delivered?”
+Method: delivery
+Method: time
+Method: payment
+
+2.	Set mattress: “Queen Bed”
+Set price: 1750
+Print “Good size for a couple!”
+Print “Price: $price”
+Print “What date would you like the mattress delivered?”
+Method: delivery
+Method: time
+Method: payment
+
+3.	Set mattress: “Twin Bed”
+Set price: 850
+Print “Great Choice”
+Print “Price: $price”
+Print “What date would you like the mattress delivered?”
+Method: delivery
+Method: time
+Method: payment
+
+4.	Method: furniture_menu
+Method: furniture_menu_choice
+
+5.	Method: mainMenu
+Method:mainMenu_choice
+
+Class Mattress_Delivery extends Table
+Set String date
+Set String time
+Set String address
+Set meridiem
+Public void delivery
+Set int begin: 4
+Set int dayNum: 28
+Set String header: “ S M T W T F S”
+Print “February”
+Print header
+Set int day: 1
+FOR days in the month of February
+	IF iteration mod 7 == 1
+		Print Line
+	IF iteration less than begin
+		Print Line 
+	Else
+	IF Day divided by 10 == 0
+	Print day
+	Else 
+	Print day
+Increment day
+
+END FOR
+
+Print “Enter day of February you would like your delivery:”
+WHILE Input must be a number
+	Print “Please enter valid date”
+Input
+END WHILE
+Set Date: input
+Print “Delivery date is February/date/2023”
+
+
+
+Public void time
+	Print “What time would you like the mattress to be delivered?”
+	Set Array [] = 9,10,11,12,1,2,3,4,5,6,7,8,9
+	FOR Iterate 4 times
+		Print array elements 0 to 3 “AM”
+	END FOR
+	FOR iterate rest of array
+		Print array elements “PM”
+	END FOR
+	Print “Enter time here:”
+	WHILE Only can input integers
+		Print “Please enter valid time”
+		Input
+	END WHILE
+	Set time: input
+	Print “AM or PM?”
+	WHILE only input alphabetical letters
+	Print “Please enter AM or PM”
+	Input
+	END WHILE
+	Set Meridiem:  input
+	Print “Your mattress will be delivered by + time + meridiem
+Public void payment
+	Set String payment
+	Set String purchase
+	Set String menu
+	Print “Enter address:
+	Set address: input
+DO
+	Print “Do you wish to proceed to payment?”
+	Print “Enter yes to proceed or No to return to mattress menu:
+Set payment: input
+IF payment = “no”
+	Method Mattress_Menu
+	Method Mattress_menu_choice
+END IF
+ELSE IF
+	Print “Press P to purchase Mattress”
+	Set purchase: input
+IF purchase = “yes”
+	Print “Thank you for purchasing with Dahl’s Store”
+	Print “Order Summary”
+	Print “Item: +table
+	Print “Delivery Date; 2/date/2023”
+	Print “Time to be delivered: + time + meridiem”
+	Print “Location to be delivered to: +address”
+	Print “Total Price: $price”
+	Print “Do you want to return to Main Menu? Enter yes or no”
+			WHILE input must be alphabetical letters
+			Print “Please enter yes or no”
+			Input
+			Set menu: input
+			IF menu = “yes”
+			Method: mainMenu
+			Method: mainMenu_Choice
+			END IF
+			ELSE IF Menu = “no”
+			Print “Thank you. Come back next time!”
+			END ELSE IF
+			ELSE
+			Print “Invalid input. Please try again.”
+			END ELSE
+			ELSE 
+			Print “Invalid input. Please try again.”
+			END ELSE
+			WHILE true
+
+
+
+
+Package Survey
+Public Class Survey
+Set String Q1
+Set String Q2
+Set String Q3
+Set String Q4
+Public void title
+	Print “This survey is a reflectin of our business”
+	Print “Please answer honestly because we take our surveys seriously”
+	
+Public void Questions
+	Print “Question 1”
+	Print “How easy is the purchasing process with our company?”
+	Set Q1: input
+	Print “Question 2”
+	Print “How likely are you to recommend us?"
+	Set Q2: input
+	Print “Question 3”
+	Print “Did you find our website useful?”
+	Set Q3: input
+	Print “Question 4”
+	Print “How could we improve our delivery System?”
+	Set Q4: input
+
+Public void Response
+	Print “Responses”
+	Print “Question 1.”
+	Print “you said: Q1
+	Print “Question 2.”
+	Print “you said: Q2
+	Print “Question 3.”
+	Print “you said: Q3
+	Print “Question 4.”
+	Print “you said: Q4
+	DO
+	Print “Do you wish to change responses?”
+	Print "Enter yes to change responses or no to return to main menu”
+	Set answer: input
+	IF answer = “yes”
+	Method Questions
+	Method Response
+	END IF
+	ELSE IF answer = “n”
+	Print “Thank you for taking our survey”
+	Method mainMenu
+	Method mainMenu_choice
+	END ELSE IF
+WHILE repeat unless user inputs yes or no
+END DO WHILE
